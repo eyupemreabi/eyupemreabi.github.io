@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşilırmak Ortaokulu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F4F7FA;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #006A4E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            color: #006A4E;
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #006A4E;
+            padding-bottom: 10px;
+        }
+        .info-block {
+            background: #F9FAFB;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-block h4 {
+            color: #2C3E50;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .info-block p {
+            color: #7F8C8D;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .button {
+            background-color: #006A4E;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #004F38;
+        }
+        footer {
+            background-color: #006A4E;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-button {
+            background-color: #F39C12;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .menu-button:hover {
+            background-color: #E67E22;
+        }
+        @media (max-width: 768px) {
+            .container { width: 90%; }
+            header { font-size: 24px; }
+            .section-title { font-size: 22px; }
+            .button { font-size: 14px; padding: 10px 18px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Yeşilırmak Ortaokulu - Hakkımızda
+    </header>
+    <div class="container">
+        <button class="menu-button" onclick="window.location.href='index.html';">Ana Menü</button>
+        
+        <section class="info-block">
+            <h4>Yeşilırmak Ortaokulu</h4>
+            <p>Yeşilırmak Ortaokulu, 1907 yılında Çöplüce İlkokulu adıyla kurulmuş, zaman içinde "Eser-i Felah" ve Cumhuriyet döneminde "Yeşilırmak" adını almıştır. 1957-1958 yıllarında şu anki binasına taşınarak eğitim öğretime devam etmektedir. Şu anki müdürümüz İbrahim Ekim'dir.</p>
+        </section>
+
+        <section class="info-block">
+            <h4>Okul Bilgileri</h4>
+            <p><strong>Telefon:</strong> (358) 218-1379</p>
+            <p><strong>Belgegeçer:</strong> <span style="color: #0073e6;">Belge Gönder</span></p>
+            <p><strong>E-posta:</strong> <a href="mailto:info@yesilirmak.meb.k12.tr" style="color: #0073e6;">info@yesilirmak.meb.k12.tr</a></p>
+            <p><strong>Web:</strong> <a href="https://yesilirmak.meb.k12.tr" target="_blank" style="color: #0073e6;">yesilirmak.meb.k12.tr</a></p>
+            <p><strong>Adres:</strong> BEYAZITPAŞA MAH. ELÇİBEY BUL. YEŞILIRMAK ORTAOKULU NO 5 MERKEZ / AMASYA</p>
+        </section>
+
+        <section class="info-block">
+            <h4>Vizyon</h4>
+            <p>Öğrencilerimizi geleceğe hazırlamak, karşılaşacakları güçlükler karşısında yılmamayı, çözümsüzlüğün değil çözümün bir parçası olmayı hayat felsefesi haline getirmelerine yardımcı olmak, teknolojik imkânları başta öğrencilerimiz olmak üzere eğitim bölgesinde yaşayan tüm insanlara tanıtmak, bu konuda öncülük etmek, durağan değil kendini ve etrafını yenileyen, yenilerken kendi değerlerini de korumayı bilen bir nesil yetiştirmektir.</p>
+        </section>
+
+        <section class="info-block">
+            <h4>Misyon</h4>
+            <p>Biz; bütün öğrencilerimizin öğrenmelerini sağlamak, onların bilgili, yetenekli, kendine güvenen bireyler olarak yetişmelerini sağlamak ve onlara 21. yüzyılın gelişen ihtiyaçlarına cevap verebilecek beceriler kazandırmak için varız. Amacımız; sevgi, saygı ve güven ortamında "başarma azmi" ve "geleceği şekillendirme sorumluluğu" ile mükemmele ulaşmak için çalışmak, sürekli gelişime öncü olmaktır.</p>
+        </section>
+
+        <section class="info-block">
+            <h4>Başarılar</h4>
+            <p>Üç kez "Yıldız Kızlar Futbol Türkiye Birincisi" olduk.</p>
+            <p><strong>Öğretmenler:</strong> 43 | <strong>Öğrenciler:</strong> 253</p>
+            <p><strong>Derslik Sayısı:</strong> 18 | <strong>Atölye-İşlik Sayısı:</strong> 1</p>
+            <p><strong>Kütüphane Kitap Sayısı:</strong> 1677</p>
+            <p><strong>Öğretim Şekli:</strong> Normal</p>
+        </section>
+
+        <section class="info-block">
+            <h4>İletişim</h4>
+            <p><strong>Ulaşım:</strong> Servis Bilgisi Mevcuttur.</p>
+            <p><strong>Isınma:</strong> Doğalgaz</p>
+            <p><strong>Yerleşim Yeri:</strong> Amasya / Merkez - 1 km İlçe Merkezine Uzaklık</p>
+            <p><strong>Bağlantı:</strong> Fatih Projesi Fiber İnternet</p>
+        </section>
+    </div>
+
+    <footer>
+        Copyright © 2025 Yeşilırmak Ortaokulu | T.C. Milli Eğitim Bakanlığı | Tüm Hakları Saklıdır
+    </footer>
+</body>
+</html>
