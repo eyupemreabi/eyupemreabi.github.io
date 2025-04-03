@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.C. Milli Eğitim Bakanlığı - Yeşilırmak Ortaokulu </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            padding-bottom: 50px;
+        }
+        header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            line-height: 1.5;
+            position: relative;
+        }
+        header .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: 20px; /* Logo ve metin arasındaki boşluk */
+        }
+        header img {
+            height: 80px; /* Logo boyutunu başlık ile aynı hizaya getirdik */
+            width: auto;
+            margin-right: 20px; /* Logo ve başlık arasındaki boşluk */
+        }
+        header .header-content div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header .header-right img {
+            height: 80px; /* Sağdaki görsel boyutunu logo ile uyumlu hale getirdik */
+            width: auto;
+            margin-left: 20px; /* Başlık metni ve görsel arasında boşluk */
+        }
+        nav {
+            background-color: #3B9A67;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav button {
+            background-color: #2E8B57;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2E8B57;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content button {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            border: none;
+            background-color: #2E8B57;
+        }
+        .dropdown-content button:hover {
+            background-color: #3B9A67;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .sections {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .section {
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .news {
+            background-color: red;
+        }
+        .announcements {
+            background-color: green;
+        }
+        .operations {
+            background-color: orange;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 90%;
+            margin: auto;
+        }
+        .box {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .news-list p {
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: color 0.3s;
+        }
+        .news-list p:hover {
+            color: red;
+        }
+        .announcements .news-list p:hover {
+            color: green;
+        }
+        .operations .news-list p:hover {
+            color: orange;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2E8B57;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://yesilirmak.meb.k12.tr/tema/tema/3/img/meb_logo.png" alt="MEB Logo">
+            <div>
+                T.C. Milli Eğitim Bakanlığı<br>
+                AMASYA / MERKEZ - Yeşilırmak Ortaokulu
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="https://abcgazetesi.com.tr/d/gallery/123206_3.jpg" alt="Header Image">
+        </div>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <button>Okulumuz</button>
+            <div class="dropdown-content">
+                <button onclick="location.href='#teachers'">Öğretmenler</button>
+                <button onclick="location.href='#history'">Tarihçe</button>
+                <button onclick="location.href='#standards'">Kurum Hizmet Standartlarımız</button>
+                <button onclick="location.href='#strategic'">Stratejik Plan</button>
+            </div>
+        </div>
+        <button onclick="location.href='hakkimizda.html'">Hakkımızda</button>
+        <button onclick="location.href='#contact'">İletişim</button>
+        <button onclick="location.href='#other'">Diğer</button>
+    </nav>
+    <div class="sections">
+        <div class="section news">Haberler</div>
+        <div class="section announcements">Duyurular</div>
+        <div class="section operations">İşlemler</div>
+    </div>
+    <div class="container">
+        <div class="box news">
+            <div class="news-list">
+                <p>18 MART ÇANAKKALE ZAFERİ OKULUMUZDA COŞKUYLA KUTLANDI</p>
+                <p>12 MART İSTİKLAL MARŞI KABULÜ VE MEHMET AKİF ERSOY'U ANMA PROGRAMI...</p>
+                <p>ÖĞRENCİMİZ WUSHU KUNG-FU TÜRKİYE 3. SÜ OLDU</p>
+                <p>ÖĞRENCİLERİMİZE SAĞLIKLI BESLENME VE DİYABET KONUSUNDA EĞİTİM...</p>
+                <p>2024-2025 EĞİTİM ÖĞRETİM YILI 1. DÖNEM KARNE TÖRENİ YAPILDI</p>
+            </div>
+        </div>
+        <div class="box announcements">
+            <div class="news-list">
+                <p>LGS KAPSAMINDAKİ MERKEZİ SINAVIN TARİHİ BELLİ OLDU</p>
+                <p>ÜLKE GENELİ ORTAK SINAV SORU VE CEVAPLARI YAYIMLANDI</p>
+                <p>MAARİFİN YÜZ AKI DERGİSİ İKİNCİ SAYISI ÇIKTI</p>
+            </div>
+        </div>
+        <div class="box operations">
+            <div class="news-list">
+                <p>MEBBİS</p>
+                <p>e-Okul</p>
+                <p>Veli Bilgilendirme</p>
+                <p>Okullarımız</p>
+                <p>Kurumsal e-Posta</p>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © Tüm Hakları Saklıdır</footer>
+</body>
+</html>
